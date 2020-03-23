@@ -104,7 +104,7 @@ PrivateData = @{
         ProjectUri = 'https://github.com/thomaskrampe/POSHLogging/blob/master/README.md'
 
         # A URL to an icon representing this module.
-        IconUri = 'https://raw.githubusercontent.com/thomaskrampe/POSHLogging/master/images/TK_POSHLogging.png'
+        IconUri = 'https://raw.githubusercontent.com/thomaskrampe/POSHLogging/master/images/POSHLogging.png'
 
         # ReleaseNotes of this module
         ReleaseNotes = 'https://github.com/thomaskrampe/POSHLogging/blob/master/README.md'

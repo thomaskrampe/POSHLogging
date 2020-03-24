@@ -32,5 +32,23 @@ After you import the POSHLogging module into your script you can start.
 `Write-ELog -EventLog "System" -Source "MyScript" -EventID "3000" -Type "Error" -Message "An error occurred"` 
 to write an entry to the event log **System** with the **Source** "MyScript", **EventID** "3000" of **type** "Error" and the **message**  "An error occurred".
 
+### Example script
+```
+Import-Module POSHLogging
+
+# Start logging
+$Logfile = Start-FLog "C:\logs" "MyScript"
+
+# Log Error
+write-FLog "E" "This is an error." $LogFile
+Write-FLog "W" "This is a warning" $Logfile
+Write-FLog "I" "This is an information" $Logfile
+
+# Stop logging
+Stop-FLog $LogFile "MyScript"
+
+# Notify eventlog 
+Write-ELog -EventLog "System" -Source "MyScript" -EventID "3000" -Type "Information" -Message "Script finished succesful." 
+``` 
 ### Example output
 ![Example output](https://github.com/thomaskrampe/POSHLogging/blob/master/images/sample-output.png "Example output")

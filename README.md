@@ -27,7 +27,10 @@ After you import the POSHLogging module into your script you can start.
     - **W** for Warning
     - **I** for Information
     - **S** for Success
-3. At the end of your script just call `Stop-FLog` which adds a footer message with time stamp to your log file.
+3. At the end of your script just call `Stop-FLog $LogFile "MyScript"` which adds a footer message with time stamp to your log file.
 4. Sometimes it's helpful to have logging in Windows Event logs as well, e.g. special things which should be logged for monitoring systems. In this case you can call 
 `Write-ELog -EventLog "System" -Source "MyScript" -EventID "3000" -Type "Error" -Message "An error occurred"` 
 to write an entry to the event log **System** with the **Source** "MyScript", **EventID** "3000" of **type** "Error" and the **message**  "An error occurred".
+
+### Example output
+![Example output](https://github.com/thomaskrampe/POSHLogging/blob/master/images/sample-output.png "Example output")

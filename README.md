@@ -23,7 +23,7 @@ After you import the POSHLogging module into your script you can start.
 ### Start logging
 1. To create the log file for your script start with `$Logfile = Start-Flog "C:\temp" "MyScript"`. The first parameter is the log file destination folder, if not already there, it will be created. The second parameter is the name of your script or whatever you want to name it. As the result of the function call above the directory C:\temp would be created (if not already exist) and a log file MyScriptYYYY-mm-dd_HH:MM.log will be created as well. The full path to the log file is than in the variable `$LogFile` for the following function calls.
 2. To send messages to you log file use the following function call: `Write-FLog -InformationType "I" -Text "Copy files to C:\Temp" -LogFile $LogFile`. Possible information types are:
-    - **E** for error
+    - **E** for Error
     - **W** for Warning
     - **I** for Information
     - **S** for Success

@@ -97,7 +97,7 @@ PrivateData = @{
         # Tags applied to this module. These help with module discovery in online galleries.
         # Tags = @()
 
-        # A URL to the license for this module.
+        # A URL to the license for this module. #
         LicenseUri = 'https://github.com/thomaskrampe/POSHLogging/blob/master/LICENSE'
 
         # A URL to the main website for this project.

@@ -18,7 +18,8 @@ Function Start-Flog {
             Author        : Thomas Krampe | t.krampe@loginconsultants.de
             Version       : 1.0
             Creation date : 26.07.2018 | v0.1 | Initial function
-            Last change   : 26.07.2018 | v1.0 | Release
+                          : 26.07.2018 | v1.0 | Release
+            Last change   : 03.09.2020 | v1.1 | Change Logfilename
            
     #>
 
@@ -34,7 +35,7 @@ Function Start-Flog {
 
     process {
         $DateTime = Get-Date -uformat "%Y-%m-%d_%H-%M"
-        $LogFileName = "$ScriptName"+"$DateTime.log"
+        $LogFileName = "$DateTime"+"-$ScriptName.log"
         $LogFile = Join-path $LogDir $LogFileName
  
         # Create the log directory if it does not exist

@@ -16,7 +16,7 @@ Function Start-Flog {
             Create the directory C:\temp (if not already exist) and the empty log file MyScriptYYYY-mm-dd_HH:MM.log 
         .NOTES
             Author        : Thomas Krampe | t.krampe@loginconsultants.de
-            Version       : 1.0
+            Version       : 1.1
             Creation date : 26.07.2018 | v0.1 | Initial function
                           : 26.07.2018 | v1.0 | Release
             Last change   : 03.09.2020 | v1.1 | Change Logfilename
